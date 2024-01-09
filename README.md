@@ -16,7 +16,7 @@ More details to be found at our [website here](https://chefd.framer.ai/).
   
 ![chefd2](https://media.discordapp.net/attachments/1194092179673579540/1194095150968881282/ChefdPreview2.PNG)
 - Chef'd also offers users an integrated social media platform.  Sharing your food adventure is as simple as tapping on "Create a Post" inside our app!
-- Users can import the ingredients for a recipe found on the discover page to their shopping cart.  By providing their zip code, A Kroger API call is made to find participating grocery stores in that area.  Then the shopping cart is forwarded to Kroger and the user is redirected to their website for pickup and delievery.
+- Users can import the ingredients for a recipe found on the discover page to their shopping cart.  By providing their zip code, A Kroger API call is made to find participating grocery stores in that area.  Then the shopping cart is forwarded to Kroger and the user is redirected to their website for pickup and delivery.
 - With the meal pantry and meal planning features, users can set meals for themselves weeks or months in advance.
   
 ## <a name="arch_tech"></a>System Architecture & Technologies
