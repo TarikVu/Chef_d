@@ -1,6 +1,4 @@
 # Chef_d
-
-## Description
 Originally developed for Senior Capstone Design I & II at the School of Computing at the University of Utah,  Chef'd is a cooking application aimed to provide users with a means to discover, order, plan, and share recipes all in one place. The recipe's found on our application are either scraped from websites with a scraper publicly available on Github, or created by fellow users.
 More details to be found at our [website here](https://chefd.framer.ai/).
 
