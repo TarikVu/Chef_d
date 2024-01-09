@@ -7,7 +7,7 @@ Originally developed for Senior Capstone Design I & II at the School of Computin
 ## Table of Contents
 - 
 
-## <a name="technologies></a>Technologies
+## <a name="technologies"></a>Technologies
 
 ## Visuals
 <img src="https://cdn.discordapp.com/attachments/1071129420162670606/1177012876951687249/image.png?ex=6570f5a9&is=655e80a9&hm=6a0ad32831d424e47d373ef7223fcd8aa1fe88c17377a63e270d18468cf3fef0&" align="center" height="600" width="300"/>
