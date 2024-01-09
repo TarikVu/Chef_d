@@ -59,4 +59,7 @@ From left to right:
 - Kevin Dwyer
 
 ## License
-default copyright laws, meaning that the authors retain all rights to our source code and no one may reproduce, distribute, or create derivative works from our work
+default copyright laws, meaning that the authors retain all rights to our source code and no one may reproduce, distribute, or create derivative works from our work.
+
+## References
+### [Scraper](https://github.com/hhursev/recipe-scrapers)
