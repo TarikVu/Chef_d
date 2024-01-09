@@ -1,52 +1,37 @@
 # Chef_d
 
 ## Description
-Originally developed for Senior Capstone Design I & II at the School of Computing at the University of Utah,  Chef'd is a cooking application aimed to provide users with a means to discover, order, plan, and share recipes all in one place. The recipe's found on our application are either scraped from websites with a scraper publicly available on Github, or created by fellow users.  
-
+Originally developed for Senior Capstone Design I & II at the School of Computing at the University of Utah,  Chef'd is a cooking application aimed to provide users with a means to discover, order, plan, and share recipes all in one place. The recipe's found on our application are either scraped from websites with a scraper publicly available on Github, or created by fellow users.
+More details to be found at our [website here](https://chefd.framer.ai/).
 
 ## Table of Contents
-- 
+1. [Application Features](#features)
+2. [System Architecture & Technologies](#arch_tech)
+3. [Setup](#setup)
+4. [Developers](#devs)
 
-## <a name="technologies"></a>Technologies
+## <a name="features"></a>Application Features
+![chefd1](https://media.discordapp.net/attachments/1194092179673579540/1194095150654300301/ChefdPreview1.PNG)
+- Users are able to create an account with Chef'd.  The verification process is carried out by the Supabase.
+- Upon loggin in users are greeted with a Discover page of the latest recipes our application provides (scraped or created by users internally).
+- Viewing a recipe displays the ingredients, nutrition facts, & reviews left by other users.
+  
+![chefd2](https://media.discordapp.net/attachments/1194092179673579540/1194095150968881282/ChefdPreview2.PNG)
+- Chef'd also offers users an integrated social media platform.  Sharing your food adventure is as simple as tapping on "Create a Post" inside our app!
+- Users can import the ingredients for a recipe found on the discover page to their shopping cart.  By providing their zip code, A Kroger API call is made to find participating grocery stores in that area.  Then the shopping cart is forwarded to Kroger and the user is redirected to their website for pickup and delievery.
+- With the meal pantry and meal planning features, users can set meals for themselves weeks or months in advance.
+  
+## <a name="arch_tech"></a>System Architecture & Technologies
+![architecture](https://media.discordapp.net/attachments/1194092179673579540/1194099418639642756/Arch.png)
 
-## Visuals
-<img src="https://cdn.discordapp.com/attachments/1071129420162670606/1177012876951687249/image.png?ex=6570f5a9&is=655e80a9&hm=6a0ad32831d424e47d373ef7223fcd8aa1fe88c17377a63e270d18468cf3fef0&" align="center" height="600" width="300"/>
-<img src="https://cdn.discordapp.com/attachments/1071129420162670606/1177013087841304626/image.png?ex=6570f5db&is=655e80db&hm=f4147a580a3315ba0f0fc7e43aad06e3d4297292d55d69f3538f631d9e78dbe8&" align="center" height="600" width="300"/>
-<img src="https://cdn.discordapp.com/attachments/1070406879869685923/1177013197643984936/image.png?ex=6570f5f6&is=655e80f6&hm=fe452dad170ea777530d604e1410e7f821f4f3e0bf58c35df1c6f4fce5bb815a&" align="center" height="600" width="300"/>
-<img src="https://cdn.discordapp.com/attachments/1070406879869685923/1177013323682828431/image.png?ex=6570f614&is=655e8114&hm=feb60c1dc5cfbb6ea2af2aca79e3d79bdac50adc8e291fefc053e544e0f1bc14&" align="center" height="600" width="300"/>
-<img src="https://cdn.discordapp.com/attachments/1070406879869685923/1177013507871485982/image.png?ex=6570f640&is=655e8140&hm=c3d633bcbc47a4aca646ce67e0227714e0f2670fdf6c880f7650c55c87fdf24f&" align="center" height="600" width="300"/>
+### Technologies utilized:
+Dart, Flutter, Supabase (Database)
 
-## Installation
-- Visual Studio Code
-    - Dart Extension
-- Flutter
-- Android Studio and any Android Emulator
+## <a name="setup"></a>Setup
+### See the following in-depth guide on our [official website here.](https://chefd.framer.ai/DownloadAndUsage)
 
-## Setup
-1. Open Android Studio and Navigate to View -> Tool Windows -> Device Manager
-2. Under Virtual, "Create Device". Hit next on any device. 
-3. Select any System Image, hit Next, and then hit Finish. This will create a Virtual Device to run the Chefd application on.
-4. Open VSCode, download all necessary extensions like Dart and Flutter.
-5. Clone/Download Chefd Application from Gitlab Repository.
-6. In terminal, run "flutter doctor" and make sure all checkboxes are green checked. Will need to 'cd' into chefd_app.
-7. Bottom right corner of VSCode, select desired virtual emulator from Android Studio. 
-8. Run the Chefd application (F5)
-
-
-Errors when building Project
-- In terminal, run "flutter clean" then "flutter pub get --no-example" 
-
-## Usage
-TBD
-
-## Support
-contact u1202975@utah.edu for support
-
-## Contributing
-This is a student project, we are not currently open to contributions
-
-## Roadmap
-Alpha Development:
+## <a name="roadmap"></a>Roadmap
+### Alpha Development:
 - UI sketching focusing on usability
 - User Registration and login for personal accounts
 - Database Integration and table relation mapping
@@ -54,35 +39,24 @@ Alpha Development:
 - Displaying User recipes
 
 
-Beta Development:
+### Beta Development:
 - Discovery and recommedation algorithms on the home page
 - Recipe creation from internal users
 - Social media feed
 - Interactive comment sections
 - Meal planning and meal calendar functionality
 
-Release:
+### Release:
 - Shopping list and cart
 - Grocery store API integration with Kroger
 
-
-Post-Release:
-- Reverse image searching for recipes
-- Automated reporting system
-- Smart Fridge compatibility
-
-## Authors
-- Huy Nguyen
+## <a name="devs"></a>Developers
+![devTeam](https://media.discordapp.net/attachments/1194092179673579540/1194112956804366396/team.jpg)
+From left to right:
 - Jaxson Goeckeritz
-- Kevin Dwyer
+- Huy Nguyen
 - Tarik Vu
+- Kevin Dwyer
 
 ## License
 default copyright laws, meaning that the authors retain all rights to our source code and no one may reproduce, distribute, or create derivative works from our work
-
-## Project status
-Design phase
-
-
-
-
