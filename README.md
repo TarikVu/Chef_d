@@ -21,7 +21,7 @@ More details to be found at our [website here](https://chefd.framer.ai/).
 - With the meal pantry and meal planning features, users can set meals for themselves weeks or months in advance.
   
 ## <a name="arch_tech"></a>System Architecture & Technologies
-![architecture](https://github.com/TarikVu/imgs/blob/main/Chefd/chefd_arch.png?raw=true)
+![architecture](https://github.com/TarikVu/imgs/blob/main/Chefd/chefd_diagram.png?raw=true)
 
 ### Technologies utilized:
 Dart, Flutter, Supabase (Database)
