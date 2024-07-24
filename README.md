@@ -3,11 +3,17 @@ Originally developed as a Senior Capstone Design I & II project at the Universit
 More details to be found at our [website here](https://chefd.framer.ai/).
 
 ## Table of Contents
-1. [Application Features](#features)
-2. [System Architecture & Technologies](#arch_tech)
+1. [System Architecture & Technologies](#arch_tech)
+2. [Application Features](#features)
 3. [Setup](#setup)
 4. [Developers](#devs)
 5. [Appendix](#apdx)
+
+## <a name="arch_tech"></a>System Architecture & Technologies
+![architecture](https://github.com/TarikVu/imgs/blob/main/Chefd/chefd_diagram.png?raw=true)
+
+### Technologies utilized:
+Dart, Flutter, Supabase (Database)
 
 ## <a name="features"></a>Application Features
 ![chefd1](https://github.com/TarikVu/imgs/blob/main/Chefd/chefd_ex1.PNG?raw=true)
@@ -20,12 +26,6 @@ More details to be found at our [website here](https://chefd.framer.ai/).
 - Users can import the ingredients for a recipe found on the discover page to their shopping cart.  By providing their zip code, A Kroger API call is made to find participating grocery stores in that area.  Then the shopping cart is forwarded to Kroger and the user is redirected to their website for pickup and delivery.
 - With the meal pantry and meal planning features, users can set meals for themselves weeks or months in advance.
   
-## <a name="arch_tech"></a>System Architecture & Technologies
-![architecture](https://github.com/TarikVu/imgs/blob/main/Chefd/chefd_diagram.png?raw=true)
-
-### Technologies utilized:
-Dart, Flutter, Supabase (Database)
-
 ## <a name="setup"></a>Setup
 ### See the following in-depth guide on our [official website here.](https://chefd.framer.ai/DownloadAndUsage)
 
