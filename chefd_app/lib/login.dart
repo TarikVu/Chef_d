@@ -1,5 +1,5 @@
 import 'package:chefd_app/discover.dart';
-import 'package:chefd_app/home.dart';
+import 'package:chefd_app/home_layout.dart';
 import 'package:chefd_app/sign_up.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:flutter/material.dart';

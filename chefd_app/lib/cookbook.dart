@@ -1,15 +1,15 @@
-import 'package:chefd_app/home.dart';
-import 'package:chefd_app/models/MealPlanListModel.dart';
-import 'package:chefd_app/utils/settings.dart';
+import 'package:chefd_app/home_layout.dart';
+import 'package:chefd_app/models/meal_plan_list_model.dart';
+import 'package:chefd_app/client_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/theme/colors.dart';
-import 'package:chefd_app/recipe.dart';
+import 'package:chefd_app/recipe/recipe_view.dart';
 import 'package:provider/provider.dart';
-import 'package:chefd_app/utils/DBFunctions.dart';
+import 'package:chefd_app/utils/db_functions.dart';
 import 'package:chefd_app/utils/constants.dart';
 
-import 'package:chefd_app/models/EditMealPlanListModel.dart';
-import 'package:chefd_app/models/CurrentMealPlanListModel.dart';
+import 'package:chefd_app/models/edit_meal_plan_list_model.dart';
+import 'package:chefd_app/models/current_meal_plan_list_model.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:intl/intl.dart';
 import 'package:pie_chart/pie_chart.dart';

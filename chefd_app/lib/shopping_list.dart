@@ -1,12 +1,12 @@
-import 'package:chefd_app/home.dart';
-import 'package:chefd_app/instore.dart';
-import 'package:chefd_app/utils/settings.dart';
+import 'package:chefd_app/home_layout.dart';
+import 'package:chefd_app/shopping_list/instore.dart';
+import 'package:chefd_app/client_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:flutter/services.dart';
-import 'models/shopping_list.dart';
-import 'package:chefd_app/checkout.dart';
+import 'models/shopping_list_model.dart';
+import 'package:chefd_app/shopping_list/checkout.dart';
 import "package:collection/collection.dart";
 
 class ShoppingList extends StatefulWidget {

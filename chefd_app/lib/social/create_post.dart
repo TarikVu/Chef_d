@@ -1,5 +1,5 @@
-import 'package:chefd_app/home.dart';
-import 'package:chefd_app/models/image_helper.dart';
+import 'package:chefd_app/home_layout.dart';
+import 'package:chefd_app/utils/image_helper.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/theme/colors.dart';

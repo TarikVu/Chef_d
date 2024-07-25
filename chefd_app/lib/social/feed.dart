@@ -1,12 +1,12 @@
-import 'package:chefd_app/home.dart';
+import 'package:chefd_app/home_layout.dart';
 import 'package:chefd_app/main.dart';
-import 'package:chefd_app/models/comment_section.dart';
-import 'package:chefd_app/models/create_post.dart';
-import 'package:chefd_app/models/create_recipe.dart';
-import 'package:chefd_app/models/feedpost.dart';
-import 'package:chefd_app/models/other_profile.dart';
+import 'package:chefd_app/social/comment_section.dart';
+import 'package:chefd_app/social/create_post.dart';
+import 'package:chefd_app/social/create_recipe.dart';
+import 'package:chefd_app/models/feed_post_model.dart';
+import 'package:chefd_app/social/other_profile.dart';
 import 'package:chefd_app/theme/colors.dart';
-import 'package:chefd_app/utils/settings.dart';
+import 'package:chefd_app/client_settings.dart';
 import 'package:flutter/material.dart';
 
 // Our social media feed from our users

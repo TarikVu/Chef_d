@@ -1,4 +1,4 @@
-import 'ingredient.dart';
+import 'ingredient_model.dart';
 
 class Recipe {
   /// Primary key identifier for a recipe.

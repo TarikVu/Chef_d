@@ -1,12 +1,12 @@
 import 'dart:io';
-import 'package:chefd_app/additional_info.dart';
-import 'package:chefd_app/home.dart';
+import 'package:chefd_app/allergen_menu.dart';
+import 'package:chefd_app/home_layout.dart';
 import 'package:chefd_app/login.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:chefd_app/models/image_helper.dart';
+import 'package:chefd_app/utils/image_helper.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SignUpWidget extends StatefulWidget {

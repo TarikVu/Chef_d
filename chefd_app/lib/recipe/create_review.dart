@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:chefd_app/models/RecipeModel.dart';
-import 'package:chefd_app/models/image_helper.dart';
+import 'package:chefd_app/models/recipe_model.dart';
+import 'package:chefd_app/utils/image_helper.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:flutter/material.dart';

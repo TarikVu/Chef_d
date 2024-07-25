@@ -1,16 +1,16 @@
-import 'package:chefd_app/cooknow.dart';
-import 'package:chefd_app/create_review.dart';
-import 'package:chefd_app/models/RecipeReviewModel.dart';
-import 'package:chefd_app/models/recipe_ingredients.dart';
-import 'package:chefd_app/recipe_review.dart';
-import 'package:chefd_app/shoppinglist.dart';
-import 'package:chefd_app/utils/DBFunctions.dart';
+import 'package:chefd_app/recipe/cooknow.dart';
+import 'package:chefd_app/recipe/create_review.dart';
+import 'package:chefd_app/models/recipe_review_model.dart';
+import 'package:chefd_app/models/recipe_ingredients_model.dart';
+import 'package:chefd_app/recipe/recipe_review.dart';
+import 'package:chefd_app/shopping_list.dart';
+import 'package:chefd_app/utils/db_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'dart:async';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'models/RecipeModel.dart';
+import '../models/recipe_model.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 class RecipeWidget extends StatefulWidget {
@@ -60,7 +60,6 @@ class _RecipeWidgetState extends State<RecipeWidget> {
   }
 
   Future<void> getRecipe() async {
-    //TODO: combine queries?
     final recipeResponse =
         await supabase.from(recipes).select("*").eq('id', recipeID);
 

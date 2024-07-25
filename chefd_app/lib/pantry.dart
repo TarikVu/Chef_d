@@ -1,10 +1,10 @@
-import 'package:chefd_app/models/PantryModel.dart';
+import 'package:chefd_app/models/pantry_model.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:chefd_app/utils/suggestions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
-import 'package:chefd_app/models/ingredient.dart';
+import 'package:chefd_app/models/ingredient_model.dart';
 import 'theme/colors.dart';
 
 class PantryWidget extends StatefulWidget {

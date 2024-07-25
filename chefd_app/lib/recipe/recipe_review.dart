@@ -1,4 +1,4 @@
-import 'package:chefd_app/models/RecipeReviewModel.dart';
+import 'package:chefd_app/models/recipe_review_model.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:flutter/material.dart';

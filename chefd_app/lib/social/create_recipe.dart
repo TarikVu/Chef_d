@@ -1,6 +1,6 @@
-import 'package:chefd_app/models/allergen_diet.dart';
-import 'package:chefd_app/models/tag.dart';
-import 'package:chefd_app/models/image_helper.dart';
+import 'package:chefd_app/models/allergen_diet_model.dart';
+import 'package:chefd_app/models/recipe_tag_model.dart';
+import 'package:chefd_app/utils/image_helper.dart';
 import 'package:chefd_app/utils/suggestions.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +39,7 @@ class _CreateRecipeState extends State<CreateRecipe> {
   final TextEditingController _ingrDescController = TextEditingController();
   String _selectedUnit = "Units";
   bool _enableCustomUnits = false;
+
   // ignore: unused_field
   String _selectedIngr = '';
 
@@ -560,6 +561,7 @@ class _CreateRecipeState extends State<CreateRecipe> {
     List<Map<String, dynamic>> convertedList =
         List<Map<String, dynamic>>.from(userNameData);
     Map<String, dynamic> tempMap = convertedList[0];
+
     String username = tempMap["username"];
 
     // Set up photo data for upload
@@ -773,6 +775,7 @@ class _CreateRecipeState extends State<CreateRecipe> {
         });
   }
 
+  // Widget to record the name of the recipe
   Widget titleView() {
     return Container(
       height: 100,
@@ -801,6 +804,7 @@ class _CreateRecipeState extends State<CreateRecipe> {
     );
   }
 
+  // Widget to record the recipe description
   Widget descriptionView() {
     return TextField(
         style: const TextStyle(color: Colors.black),

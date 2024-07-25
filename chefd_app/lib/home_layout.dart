@@ -1,12 +1,14 @@
-import 'package:chefd_app/feed.dart';
+import 'package:chefd_app/social/feed.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/discover.dart';
-import 'package:chefd_app/my_profile.dart';
+import 'package:chefd_app/social/my_profile.dart';
 import 'package:chefd_app/cookbook.dart';
-import 'package:chefd_app/shoppinglist.dart';
+import 'package:chefd_app/shopping_list.dart';
 
+// Our stateful widget that is basically the skeleton
+//of the UI that holds the Nav Bar
 class HomeWidget extends StatefulWidget {
   const HomeWidget({super.key});
 

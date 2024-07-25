@@ -1,11 +1,11 @@
-import 'package:chefd_app/models/userInfo.dart';
-import 'package:chefd_app/recipe.dart';
+import 'package:chefd_app/models/user_info_model.dart';
+import 'package:chefd_app/recipe/recipe_view.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:chefd_app/models/profilepost.dart';
-import 'package:chefd_app/models/post_details.dart';
+import 'package:chefd_app/models/profile_post_model.dart';
+import 'package:chefd_app/social/post_details.dart';
 import 'package:chefd_app/utils/constants.dart';
-import 'package:chefd_app/models/create_post.dart';
+import 'package:chefd_app/social/create_post.dart';
 
 class OtherProfileWidget extends StatefulWidget {
   const OtherProfileWidget(this.otherUserID, {super.key});

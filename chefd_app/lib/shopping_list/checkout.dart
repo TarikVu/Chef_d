@@ -1,4 +1,4 @@
-import 'package:chefd_app/utils/DBFunctions.dart';
+import 'package:chefd_app/utils/db_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:http/http.dart' as http;

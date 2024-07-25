@@ -1,11 +1,10 @@
 import 'dart:io';
-import 'package:chefd_app/additional_info.dart';
+import 'package:chefd_app/allergen_menu.dart';
 import 'package:chefd_app/login.dart';
 import 'package:chefd_app/main.dart';
-import 'package:chefd_app/models/image_helper.dart';
-import 'package:chefd_app/models/userInfo.dart';
+import 'package:chefd_app/utils/image_helper.dart';
+import 'package:chefd_app/models/user_info_model.dart';
 import 'package:chefd_app/theme/colors.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -14,8 +13,6 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 // Ref: https://www.fluttertemplates.dev/widgets/must_haves/settings_page
 class SettingsWidget extends StatefulWidget {
   const SettingsWidget({Key? key}) : super(key: key);
-
-  // Int userId
 
   @override
   State<SettingsWidget> createState() => _SettingsWidgetState();
@@ -38,7 +35,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
   @override
   void initState() {
     super.initState();
-
     Future.delayed(Duration.zero, () {
       fetchFromDB();
     });
@@ -46,23 +42,24 @@ class _SettingsWidgetState extends State<SettingsWidget> {
 
   Future<void> fetchFromDB() async {
     // Fetch User's data
-    // User info
     final userInfoData =
         await supabase.from('userinfo').select('*').eq('user_id', _userId);
+
     // Set User's info
     List<dynamic>? infoAsList = userInfoData;
     _userInfo = UserInfo.fromJson(infoAsList![0]);
 
     if (!mounted) return;
+
     setState(() {
       _userName = _userInfo!.username;
       _profilePicture = _userInfo?.profilePicture;
-
-      // No profile picture URL in table, set to default
+      // No profile picture URL in table? set to default
       _profilePicture ??= _defaultProfilePicture;
     });
   }
 
+  // Build the page
   @override
   Widget build(BuildContext context) {
     return Theme(
@@ -130,9 +127,6 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                   ],
                 ),
                 const Divider(),
-
-                // This would be a good place to add a link to our main website.
-
                 _SingleSection(
                   children: [
                     _CustomListTile(
@@ -147,27 +141,12 @@ class _SettingsWidgetState extends State<SettingsWidget> {
                     ),
                   ],
                 ),
-
                 _SingleSection(
                   children: [
                     _CustomListTile(
                       title: "Sign out",
                       icon: Icons.exit_to_app_rounded,
                       onTap: () async {
-                        // *** NOTE ** attempting to clear the nav stack
-                        // by popping before redirecting to the login page
-                        // would cause unexpected "anonymous closures"
-                        // For now we will just push the login page,
-                        // Either way when calling supabase.auth.signout
-                        // The user will be logged out in the back end.
-
-                        // while (Navigator.of(context).canPop()) {
-                        //   Navigator.of(context).pop();
-                        // }
-
-                        // // pops last page on navigator stack (Should be home context)
-                        //Navigator.of(context).pop(); // Pops Home Context
-
                         // Signs the user out then pushes
                         // The login page on the nav stack.
                         await supabase.auth.signOut().then((value) =>
@@ -363,6 +342,8 @@ class _SingleSection extends StatelessWidget {
   }
 }
 
+// The Widget for the about page on the app,
+// This is general info about our team Chef'd
 class AboutWidget extends StatelessWidget {
   const AboutWidget({super.key});
 

@@ -1,4 +1,4 @@
-import 'package:chefd_app/models/shopping_list.dart';
+import 'package:chefd_app/models/shopping_list_model.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:chefd_app/utils/constants.dart';
 import 'package:flutter/material.dart';

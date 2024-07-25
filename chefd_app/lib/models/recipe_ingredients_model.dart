@@ -1,4 +1,4 @@
-import 'package:chefd_app/models/ingredient.dart';
+import 'package:chefd_app/models/ingredient_model.dart';
 
 class RecipeIngredients {
   int recipeID;

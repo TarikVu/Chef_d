@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'package:chefd_app/models/user.dart';
+import 'package:chefd_app/models/user_model.dart';
 
 import '../utils/constants.dart';
-import 'ingredient.dart';
+import 'ingredient_model.dart';
 import 'package:http/http.dart' as http;
 
 class Shopping_List {

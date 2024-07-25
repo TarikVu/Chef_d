@@ -1,5 +1,5 @@
-import 'package:chefd_app/additional_info.dart';
-import 'package:chefd_app/home.dart';
+import 'package:chefd_app/allergen_menu.dart';
+import 'package:chefd_app/home_layout.dart';
 import 'package:chefd_app/login.dart';
 import 'package:chefd_app/sign_up.dart';
 import 'package:flutter/material.dart';

@@ -1,5 +1,5 @@
 import 'package:chefd_app/main.dart';
-import 'package:chefd_app/models/other_profile.dart';
+import 'package:chefd_app/social/other_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:chefd_app/theme/colors.dart';
 import 'package:flutter/services.dart';
