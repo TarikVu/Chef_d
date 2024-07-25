@@ -37,7 +37,6 @@ class MyApp extends StatelessWidget {
         '/signup': (context) => const SignUpWidget(),
         '/additionalinfo': (context) => const AdditionalInfoWidget(),
       },
-      //home: LoginWidget(),
     );
   }
 }

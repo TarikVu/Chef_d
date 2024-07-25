@@ -2,7 +2,7 @@ import 'package:chefd_app/home_layout.dart';
 import 'package:chefd_app/main.dart';
 import 'package:chefd_app/social/comment_section.dart';
 import 'package:chefd_app/social/create_post.dart';
-import 'package:chefd_app/social/create_recipe.dart';
+import 'package:chefd_app/recipe/create_recipe.dart';
 import 'package:chefd_app/models/feed_post_model.dart';
 import 'package:chefd_app/social/other_profile.dart';
 import 'package:chefd_app/theme/colors.dart';

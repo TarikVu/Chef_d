@@ -1,4 +1,4 @@
-import 'package:chefd_app/social/create_recipe.dart';
+import 'package:chefd_app/recipe/create_recipe.dart';
 import 'package:chefd_app/models/profile_post_model.dart';
 import 'package:chefd_app/models/user_info_model.dart';
 import 'package:chefd_app/pantry.dart';
